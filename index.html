@@ -1,9 +1,23 @@
-<<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello World</title>
-</head>
-<body>
-	<h1>Hello World.</h1>
-</body>
+<!DOCTYPE html>
+<html ng-app="demoApp">
+    <head>
+        <title>Workflow UI</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.4.5/textAngular.css" />
+    </head>
+    <body>
+        <div ng-view></div>
+
+        <script src="https://code.angularjs.org/1.4.4/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.4/angular-route.min.js"></script>
+        <script src='http://textangular.com/dist/textAngular-rangy.min.js'></script>
+        <script src='http://textangular.com/dist/textAngular-sanitize.min.js'></script>
+        <script src='http://textangular.com/dist/textAngular.min.js'></script>
+
+        <script src="src/js/app.module.js"></script>
+        <script src="src/js/controllers/customers.controller.js"></script>
+        <script src="src/js/controllers/orders.controller.js"></script>
+        <script src="src/js/services/data.service.js"></script>
+        <script src="src/js/directives/filterTextbox.directive.js"></script>
+    </body>
 </html>
