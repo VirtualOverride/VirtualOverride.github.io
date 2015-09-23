@@ -23,5 +23,3 @@ node_modules
 # all generated JS
 src/app/**/*.js
 src/app/**/*.js.map
-
-src/bower_components
