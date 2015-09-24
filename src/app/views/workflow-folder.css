@@ -27,9 +27,9 @@
 
 /* --- Tree --- */
 .tree-node {
-    /* border: 1px solid #dae2ea; */
-    /* background: #f8faff; */
-    /* color: #7c9eb2; */
+     border: 1px solid #dae2ea; 
+     background: #f8faff; 
+     color: #7c9eb2; 
 }
 
 .nodrop {

@@ -27,3 +27,13 @@
 	padding-right: 0px;
 }
  
+.wf-state-content-header {
+	background-color:#C9CFD1;
+}
+
+.wf-state-content-header p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px
+}
