@@ -11,6 +11,12 @@ module demoApp {
         total: number;
     }
 
+    export interface ITreeNode {
+        id: number;
+        title: string;
+        nodes: ITreeNode[];
+    }
+
     export class DataService {
 
         static $inject = ['$http'];
@@ -25,6 +31,12 @@ module demoApp {
         getOrder(id: number): ng.IPromise<IOrder[]> {
             return this.$http.get('orders.json', { id: id }).then(response => {
                return response.data;
+            });
+        }
+
+        getTreeNode(): ng.IPromise<ITreeNode[]> {
+            return this.$http.get('tree.node.json').then(response => {
+                return response.data;
             });
         }
     }

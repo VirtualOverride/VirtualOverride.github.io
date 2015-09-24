@@ -14,6 +14,11 @@ var demoApp;
                 return response.data;
             });
         };
+        DataService.prototype.getTreeNode = function () {
+            return this.$http.get('tree.node.json').then(function (response) {
+                return response.data;
+            });
+        };
         DataService.$inject = ['$http'];
         return DataService;
     })();

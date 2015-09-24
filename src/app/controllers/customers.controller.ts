@@ -2,18 +2,20 @@ module demoApp {
     'use strict';
 
     class CustomersController {
-        customers: ICustomer[] = null;
+        workflows: ITreeNode[] = null;
 
         static $inject = ['demoApp.dataService'];
+
         constructor(dataService: DataService) {
-            dataService.getCustomers()
-              .then((custs: ICustomer[]) => {
-                 this.customers = custs;
-              });
+            dataService
+                .getTreeNode()
+                .then((results: ITreeNode[]) => {
+                    this.workflows = results;
+                });
         }
     }
 
-    angular.module('demoApp')
-           .controller('demoApp.CustomersController', CustomersController);
-
+    angular
+        .module('demoApp')
+        .controller('demoApp.CustomersController', CustomersController);
 }

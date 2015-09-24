@@ -3,3 +3,27 @@
 	padding:0px;
 	margin-top: 20px;
 }
+
+.nav-tabs > li {
+    float: right;
+}
+
+.wf-state-content-form {
+	padding: 0px;
+	height: 370px;
+}
+
+.wf-state-content-form-left-container {
+	height:320px;
+	padding: 10px;
+}
+
+.wf-state-content-form-left {
+	background-color:#F0F4F5;
+	height:300px;
+}
+
+.wf-state-content-form-right-container {
+	padding-right: 0px;
+}
+ 

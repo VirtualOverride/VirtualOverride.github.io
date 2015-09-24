@@ -8,5 +8,17 @@
         <button class="btn btn-default">
             ADD NEW WORKFLOW
         </button>
+
+        <br />
+        <br />
+
+		<div ui-tree>
+			<ol ui-tree-nodes="" ng-model="vm.workflows" id="tree-root">
+				<li ng-repeat="node in vm.workflows" 
+					ui-tree-node 
+					ng-include="'app/views/nodes_renderer.html'"></li>
+			</ol>
+		</div> 
+
     </div>
 </div>

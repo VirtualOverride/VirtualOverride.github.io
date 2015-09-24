@@ -1,5 +1,8 @@
 (function () {
-    var app = angular.module('demoApp', ['ngRoute', 'textAngular', 'ui.tree']);
+    var app = angular.module('demoApp', ['ngRoute',
+        'textAngular',
+        'ui.tree',
+        'ui.bootstrap']);
     app.config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/', {
                 controller: 'demoApp.CustomersController',
