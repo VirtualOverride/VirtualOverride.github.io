@@ -1,6 +1,6 @@
 ((): void => {
 
-    var app = angular.module('demoApp', ['ngRoute', 'textAngular']);
+    var app = angular.module('demoApp', ['ngRoute', 'textAngular', 'ui.tree']);
 
     app.config(['$routeProvider', ($routeProvider) => {
         $routeProvider.when('/',

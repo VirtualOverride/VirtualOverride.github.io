@@ -57,7 +57,7 @@ gulp.task('watch', function() {
     gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts']);
 });
 
-gulp.task('serve', ['compile-ts'], function() {
+gulp.task('serve', ['compile-ts', 'watch'], function() {
   process.stdout.write('Starting browserSync and superstatic...\n');
   browserSync({
     port: 3178,
