@@ -37,3 +37,34 @@
 	vertical-align: middle;
 	padding: 10px
 }
+
+.wf-stage-content-media-upload {
+	border: 1px solid #000;
+	height: 100px;
+}
+
+.wf-stage-content-media-list-border {
+	border: 1px solid #000;
+	height: 35px;
+	border-right: 0px;
+}
+
+.wf-stage-content-media-list-icon {
+	border: 1px solid #000;
+	height: 35px;
+	border-right: 0px;	
+}
+
+.wf-stage-content-media-list-border-select {
+	height: 35px;
+	border: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+#u19_img {
+	position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 35px;
+    height: 25px;
+}

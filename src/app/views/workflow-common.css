@@ -6,3 +6,14 @@
 .no-padding {
 	padding: 0px !important;
 }
+
+.wf-block-container {
+    border-right:1px solid #000;
+}
+
+.wf-center-element p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px
+}

@@ -1,0 +1,29 @@
+.wf-info-stage-list-item {
+	padding:2px;
+	background-color:#D5E7ED;
+	font-size:14px;
+}
+
+.wf-info-stage-list-item-no {
+	background-color:#C9CFD1;
+	height:40px;
+}
+
+.wf-info-stage-list-item-no p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px
+}
+
+.wf-info-stage-list-item-name {
+	background-color:white;
+	height:40px;
+}
+
+.wf-info-stage-list-item-name p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px
+}

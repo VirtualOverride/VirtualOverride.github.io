@@ -1,4 +1,4 @@
-<div class="col-md-4" style="border-right:1px solid #000;height:1200px;padding:0px;">
+<div class="col-md-4 wf-block-container main-container-h">
     <div class="col-mid-12" style="margin-top:35px;margin-left:20px;margin-right:20px;">
          <p>
              <h4>Workflow Name</h4>
@@ -29,31 +29,16 @@
      
     <div  class="col-md-12" style="margin-top:10px;margin-bottom:10px;"></div>
 
-    <div class="col-md-12" style="padding:2px;background-color:#D5E7ED;font-size:14px;">
-         <div class="col-md-2" style="background-color:#C9CFD1;height:40px;">
-             <p style="text-align:center;display:table-cell;vertical-align:middle;padding:10px">
-                 1
-             </p>
+    <div ng-repeat="stage in vm.workflowStages" class="col-md-12 wf-info-stage-list-item">
+         <div class="col-md-2 wf-info-stage-list-item-no">
+             <p>{{ stage.no }}</p>
          </div>
-         <div class="col-md-10" style="background-color:white;height:40px;">
-            <p style="text-align:center;display:table-cell;vertical-align:middle;padding:10px">
+         <div class="col-md-10 wf-info-stage-list-item-name">
+            <p>
               <input type="checkbox" aria-label="...">
-              Workflow stage name
+              {{ stage.name }}
             </p>
          </div>
     </div>
-
-    <div class="col-md-12" style="padding:2px;background-color:#D5E7ED;font-size:14px;">
-         <div class="col-md-2" style="background-color:#C9CFD1;height:40px;">
-             <p style="text-align:center;display:table-cell;vertical-align:middle;padding:10px">
-                 2
-             </p>
-         </div>
-         <div class="col-md-10" style="background-color:white;height:40px;">
-            <p style="text-align:center;display:table-cell;vertical-align:middle;padding:10px">
-              <input type="checkbox" aria-label="...">
-              Workflow stage name
-            </p>
-         </div>
-    </div>
+    
 </div>

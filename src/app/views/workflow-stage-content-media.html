@@ -3,18 +3,35 @@
         <p>Media</p>                    
     </div>
     <div class="col-md-12 no-padding">
-        <div class="col-md-12" style="margin-top:10px;margin-bottom:10px;"></div> 
+        <div class="col-md-12 separator20"></div> 
 
-        <div class="col-md-12" style="padding:0px;margin:10px;border:1px solid #000;height:100px;">
+        <div class="col-md-12 wf-stage-content-media-upload">
             
         </div>
 
-        <div class="col-md-12" style="margin-top:10px;margin-bottom:10px;"></div> 
+        <div class="col-md-12 separator20"></div> 
 
-        <div class="col-md-12" style="padding:0px;">
-            <div>
+        <div ng-repeat="media in vm.workflowMedias" class="col-md-12 wf-center-element no-padding">
+            <div class="col-md-1 no-padding wf-stage-content-media-list-border">
+                <img id="u19_img" ng-src="{{ media.image }}">
+            </div>
+
+            <div class="col-md-5 no-padding wf-stage-content-media-list-border ">
+                <p>
+                    {{ media.name }}
+                </p>
+            </div>
+
+            <div class="col-md-4 no-padding wf-stage-content-media-list-border ">
+                <p>
+                    {{ media.date }}
+                </p>
+            </div>
+
+            <div class="col-md-2 no-padding wf-stage-content-media-list-border-select">
                 
             </div>
+
         </div>
 
     </div>
