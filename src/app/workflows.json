@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"workflow_name": "Workflow Name 1",
+		"description": "Description about this workflow description about this workflow description about this workflow",
+		"created_by": {
+			"first_name": "Jack",
+			"last_name": "Daniels",
+			"title": "Admin"
+		},
+		"created_date": "",
+		"updated_date": "", 
+		"workflow_stages": [
+			{ 
+				"id": 1, 		
+				"medias": [
+			        { "id": 1, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" },
+			        { "id": 2, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" },
+			        { "id": 3, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" }
+				]
+			},
+			{ 
+				"id": 2, 		
+				"medias": [
+			        { "id": 1, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" },
+			        { "id": 2, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" },
+			        { "id": 3, "image_url": "assets/images/u70.png", "file_name": "name.file_format", "date": "dd/mm/yyyy" }
+				]
+			}			
+		],
+		"forms_components": [
+			{ "id": 1, "category": "standard", "text": "Title", "type": "label"  },
+			{ "id": 2, "category": "standard", "text": "Text field", "type": "text"  },
+			{ "id": 3, "category": "standard", "text": "CheckBox", "type": "checkbox"  },
+			{ "id": 4, "category": "standard", "text": "Radio buttons", "type": "radio"  },
+			{ "id": 5, "category": "advance", "text": "Date", "type": "date"  },
+			{ "id": 6, "category": "advance", "text": "URL", "type": "url"  },
+			{ "id": 7, "category": "advance", "text": "File Upload", "type": "file"  },
+			{ "id": 8, "category": "advance", "text": "Email", "type": "email"  }
+		]
+	}
+]

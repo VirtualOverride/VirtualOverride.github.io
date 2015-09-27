@@ -27,7 +27,7 @@
          </p>           
     </div>
      
-    <div  class="col-md-12" style="margin-top:10px;margin-bottom:10px;"></div>
+    <div  class="col-md-12 vertical-separator20"></div>
 
     <div ng-repeat="stage in vm.workflowStages" class="col-md-12 wf-info-stage-list-item">
          <div class="col-md-2 wf-info-stage-list-item-no">
@@ -40,5 +40,16 @@
             </p>
          </div>
     </div>
+
+    <div class="col-md-12 wf-info-stage-list-item">
+         <div class="col-md-2 wf-info-stage-list-item-no-new">
+             <p style="font-style:italic;">no.#</p>
+         </div>
+         <div class="col-md-10 no-padding wf-info-stage-list-item-name wf-info-stage-list-item-new">
+            <span class="glyphicon glyphicon-plus"></span>
+            <input type="text" aria-label="..." placeholder="Add a new stage">
+         </div>        
+    </div>
+
     
 </div>
