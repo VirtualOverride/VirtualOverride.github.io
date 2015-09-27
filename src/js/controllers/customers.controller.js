@@ -7,6 +7,8 @@ var demoApp;
             this.workflows = null;
             this.workflowStages = null;
             this.workflowMedias = null;
+            this.workflowFormStandards = null;
+            this.workflowFormAdvances = null;
             dataService
                 .getTreeNode()
                 .then(function (results) {
@@ -20,6 +22,18 @@ var demoApp;
                 { image: 'assets/images/u70.png', name: 'name.file_format', date: 'dd/mm/yyyy' },
                 { image: 'assets/images/u70.png', name: 'name.file_format', date: 'dd/mm/yyyy' },
                 { image: 'assets/images/u70.png', name: 'name.file_format', date: 'dd/mm/yyyy' }
+            ];
+            this.workflowFormStandards = [
+                { id: 1, text: 'Title' },
+                { id: 2, text: 'Text field' },
+                { id: 3, text: 'Checkbox' },
+                { id: 4, text: 'Radio buttons' }
+            ];
+            this.workflowFormAdvances = [
+                { id: 1, text: 'Date' },
+                { id: 2, text: 'Url' },
+                { id: 3, text: 'File Upload' },
+                { id: 4, text: 'Email' }
             ];
         }
         CustomersController.$inject = ['demoApp.dataService'];

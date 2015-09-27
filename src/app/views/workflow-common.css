@@ -3,6 +3,21 @@
 	margin-bottom: 10px;
 }
 
+.vertical-separator20 {
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+.vertical-separator10 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.vertical-separator50 {
+	margin-top: 25px;
+	margin-bottom: 25px; 
+}
+
 .no-padding {
 	padding: 0px !important;
 }
