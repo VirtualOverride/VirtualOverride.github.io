@@ -1,0 +1,18 @@
+#u16 {
+    width: 189px;
+    height: 71px;
+    font-size: 28px;
+    text-align: left;
+}
+
+#u16_img {
+    width: 189px;
+    height: 71px;
+}
+
+#u17 {
+    margin-top:-55px;
+    margin-left: 10px;
+    width: 175px;
+    word-wrap: break-word;
+}

@@ -1,0 +1,65 @@
+.wf-info-stage-list-item {
+	padding:2px;
+	background-color:#D5E7ED;
+	font-size:14px;
+}
+
+.wf-info-stage-list-item p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px	
+}
+
+.wf-info-stage-list-item-no {
+	background-color:#C9CFD1;
+	height:40px;
+}
+
+
+.wf-info-stage-list-item-name {
+	background-color:white;
+	height:40px;
+}
+
+.wf-info-stage-list-item-no-new {
+	background-color:#E6E9EB;
+	height:40px;	
+}
+
+.wf-info-stage-list-item-new input::-webkit-input-placeholder { 
+    color: gray;
+    opacity: 0.6;
+    font-style: italic;
+}
+.wf-info-stage-list-item-new input:-moz-placeholder { 
+    color: gray;
+    opacity: 0.6;
+    font-style: italic;
+}
+.wf-info-stage-list-item-new input::-moz-placeholder { 
+    color: gray;
+    opacity: 0.6;
+   	font-style: italic;
+}
+.wf-info-stage-list-item-new input:-ms-input-placeholder { 
+    color: gray;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.wf-info-stage-list-item-new input {
+	height: 40px;
+	width: 100%;
+	padding-left: 25px;
+	border: 0px;
+}
+
+.wf-info-stage-list-item-new span {
+	position: absolute;
+    top: 12px;
+    color: gray;
+    opacity: 0.6;
+    left: 5px;
+    font-style: italic;
+}

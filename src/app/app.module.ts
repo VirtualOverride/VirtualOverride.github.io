@@ -10,13 +10,13 @@
         $routeProvider.when('/',
         {
             controller: 'demoApp.CustomersController',
-            templateUrl: 'app/views/customers.html',
+            templateUrl: 'app/main/main.html',
             controllerAs: 'vm'
         })
-        .when('/orders/:customerId',
+        .when('/project',
         {
-            controller: 'demoApp.OrdersController',
-            templateUrl: 'app/views/orders.html',
+            controller: 'demoApp.ProjectCollaborationController',
+            templateUrl: 'app/components/project.collaboration/project.collaboration.html',
             controllerAs: 'vm'
         });
     }]);

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3178/#/project -->
+<html ng-app="demoApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <title>Workflow UI</title>
+        <link href="./Workflow UI_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./Workflow UI_files/textAngular.css" rel="stylesheet">
+        <link href="./Workflow UI_files/angular-ui-tree.min.css" rel="stylesheet">
+        <link href="./Workflow UI_files/main.css" rel="stylesheet">
+        <link href="./Workflow UI_files/workflow-common.css" rel="stylesheet">
+        <link href="./Workflow UI_files/workflow-folder.css" rel="stylesheet">
+        <link href="./Workflow UI_files/workflow-info-stage.css" rel="stylesheet">
+        <link href="./Workflow UI_files/workflow-stage-content.css" rel="stylesheet">
+        
+        <link href="./Workflow UI_files/project.collaboration.css" rel="stylesheet">    
+    </head>
+    <body><script type="text/javascript" id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.2.9.6.js'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="./Workflow UI_files/browser-sync-client.2.9.6.js"></script>
+
+        <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="container main-container ng-scope">
+	<div class="col-md-6">
+		<div class="col-mid-12" style="margin-top:35px;margin-left:20px;margin-right:20px;">
+			<p>
+				</p><h4>Type_ProjectName_Client_Date</h4>
+				<br><br>
+				Project description area, you can enter a short paragraph here to describe your project in detail. 
+				<br><br>      
+				<div class="col-mid-12">
+					<select class="form-control ng-pristine ng-untouched ng-valid" ng-model="qs.selectedLanguage" ng-options="language.label for language in qs.languages"><option value="?" selected="selected"></option></select>					
+				</div>
+			<p></p>         
+		</div>		
+		
+		<div class="vertical-separator20"></div>
+		
+		<div class="col-md-12">			
+			<div class="ng-isolate-scope">
+  <ul class="nav nav-tabs" ng-class="{&#39;nav-stacked&#39;: vertical, &#39;nav-justified&#39;: justified}" ng-transclude="">
+				<li ng-class="{active: active, disabled: disabled}" heading="Dashboard" active="true" class="ng-isolate-scope active">
+  <a href="" ng-click="select()" tab-heading-transclude="" class="ng-binding">Dashboard</a>
+</li>
+				<li ng-class="{active: active, disabled: disabled}" heading="Members" class="ng-isolate-scope">
+  <a href="" ng-click="select()" tab-heading-transclude="" class="ng-binding">Members</a>
+</li>
+				<li ng-class="{active: active, disabled: disabled}" heading="Setting" class="ng-isolate-scope">
+  <a href="" ng-click="select()" tab-heading-transclude="" class="ng-binding">Setting</a>
+</li>
+			</ul>
+  <div class="tab-content">
+    <!-- ngRepeat: tab in tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+    
+					
+					<div class="col-md-12 ng-scope">
+						<div id="u16" class="ax_shape">
+							<img id="u16_img" class="img " src="./Workflow UI_files/u16.png">
+							<div id="u17" class="text" style="top: 20px; transform-origin: 82.5px 15.5px 0px;">
+								<p><span>85</span></p>
+							</div>
+						</div>					
+					</div>
+					
+					<br class="ng-scope"><br class="ng-scope">
+					
+					<p class="ng-scope">
+						Start : Date / Month / Year 
+						<br>
+						Due : Date / Month / Year 
+					</p> 
+				</div><!-- end ngRepeat: tab in tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+    
+				
+				</div><!-- end ngRepeat: tab in tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+    
+					
+				</div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div>
+		</div>		
+		
+		<div class="vertical-separator20"></div>
+		
+		<div class="col-md-12">
+			
+		</div>
+		
+	</div>
+	
+	<div col-md-6="">
+		
+	</div>
+</div></div>
+
+        <script src="./Workflow UI_files/angular.min.js"></script>
+        <script src="./Workflow UI_files/angular-route.min.js"></script>
+        <script src="./Workflow UI_files/textAngular-rangy.min.js"></script>
+        <script src="./Workflow UI_files/textAngular-sanitize.min.js"></script>
+        <script src="./Workflow UI_files/textAngular.min.js"></script>
+        <script src="./Workflow UI_files/ui-bootstrap-tpls-0.13.4.js"></script>
+        <script src="./Workflow UI_files/angular-ui-tree.js"></script>
+
+        <script src="./Workflow UI_files/app.module.js"></script>
+        <script src="./Workflow UI_files/customers.controller.js"></script>
+        <script src="./Workflow UI_files/orders.controller.js"></script>
+        <script src="./Workflow UI_files/data.service.js"></script>
+        <script src="./Workflow UI_files/filterTextbox.directive.js"></script>
+        <script src="./Workflow UI_files/project.collaboration.controller.js"></script>
+    
+
+<input id="textAngular-editableFix-010203040506070809" class="ta-hidden-input" aria-hidden="true" unselectable="on" tabindex="-1"><div id="__bs_notify__" style="display: none; padding: 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; right: 0px; top: 0px; border-bottom-left-radius: 5px; margin: 0px; color: white; text-align: center; background-color: rgb(27, 32, 50);">Connected to BrowserSync</div></body></html>
