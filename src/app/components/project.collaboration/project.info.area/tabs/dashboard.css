@@ -1,0 +1,30 @@
+.db-progress span {
+	font-size: 11px;
+    position: absolute;
+    top: 23px;
+    left: 61px
+}
+
+.db-progress-bar {
+	position: absolute;
+    top: 38px;
+    left: 62px;
+}
+
+.db-stage-count-bg {
+    margin-left: 15px;
+}
+
+.db-stage-count {
+    font-size: 28px;
+    position: absolute;
+    top:15px;
+    left: 59px;
+}
+
+.db-stage-count-label {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    font-size: 12px;
+}

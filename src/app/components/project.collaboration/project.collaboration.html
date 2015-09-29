@@ -1,101 +1,30 @@
 <div class="container main-container" style="height:1000px;">
 	<div class="col-md-6">
-		<div class="col-mid-12" style="margin-top:35px;margin-left:20px;margin-right:20px;">
-			<p>
-				<h4>Type_ProjectName_Client_Date</h4>
-				<br /><br />
-				Project description area, you can enter a short paragraph here to describe your project in detail. 
-				<br /><br />      
-				<div class="col-mid-12">
-					<select class="form-control" ng-model="qs.selectedLanguage"
-						ng-options="language.label for language in qs.languages">
-					</select>					
-				</div>
-			</p>         
-		</div>		
-		
-		<div class="vertical-separator20"></div>
-		
-		<div class="col-md-12">			
-			<tabset>
-				<tab heading="Dashboard" active="true">
-					
-					<div class="col-md-12">
-						<div id="u16" class="ax_shape">
-							<img id="u16_img" class="img " 
-								src="http://d26uhratvi024l.cloudfront.net/gsc/HEPBC3/f3/a7/33/f3a73388a7634a14b80fb012bf210077/images/2_0_0_porject_collaboration_space/u16.png?token=dcc02bca3361398a6bf014810ea3406d">
-							<div id="u17" class="text" style="top: 20px; transform-origin: 82.5px 15.5px 0px;">
-								<p><span>85</span></p>
-							</div>
-						</div>					
-					</div>
-					
-					<div class="col-md-12 vertical-separator20"></div>
-					
-					<div class="col-md-12">
-					<p>
-						Start : Date / Month / Year 
-						<br />
-						Due : Date / Month / Year 
-					</p> 
-					</div>
-				</tab>
-				<tab heading="Members">
-				
-				</tab>
-				<tab heading="Setting">
-					
-				</tab>
-			</tabset>
-		</div>		
-		
-		<div class="class-md-12 vertical-separator20"></div>
-		
-		<div class="col-md-12" style="heigt">
-			<div ng-repeat="stage in vm.workflowStages" class="col-md-12 wf-info-stage-list-item">
-				<div class="col-md-2 wf-info-stage-list-item-no">
-					<p>{{ stage.no }}</p>
-				</div>
-				<div class="col-md-10 wf-info-stage-list-item-name">
-					<p>
-					<input type="checkbox" aria-label="...">
-					{{ stage.name }}
-					</p>
-				</div>
-			</div>
-		
-			<div class="col-md-12 wf-info-stage-list-item">
-				<div class="col-md-2 wf-info-stage-list-item-no-new">
-					<p style="font-style:italic;">no.#</p>
-				</div>
-				<div class="col-md-10 no-padding wf-info-stage-list-item-name wf-info-stage-list-item-new">
-					<span class="glyphicon glyphicon-plus"></span>
-					<input type="text" aria-label="..." placeholder="Add a new stage">
-				</div>        
-			</div>		
-		</div>
-		
+		<div ng-include="'app/components/project.collaboration/project.info.area/project.info.area.html'"></div>		
 	</div>
 	
-	<div class="col-md-6"  style="border-left:1px solid #000;height:1000px;">
-		<div class="col-md-12">
-			<div class="col-md-6">
+	<div class="col-md-6 no-padding"  style="border-left:1px solid #000;height:1000px;">
+		<div class="col-md-12 no-padding">
+			<div class="col-md-12 db-project-stage-content-header">			
+			</div>
+			
+			
+			<!--<div class="col-md-6">
 				<p class="p-center">
-				No.# 
-				<input type="checkbox" />
-				Pre-defined stage name
+					No.# 
+					<input type="checkbox" />
+					Pre-defined stage name
 				</p>
 			</div>
 			<div class="col-md-6">
 				<button type="button" class="btn btn-default">Submit</button>
-			</div>
+			</div>-->
 		</div>
 		
 		<div class="col-md-12 vertical-separator20"></div>
 		
 		<div class="col-md-12">
-			Description, supporting images or anything you wish to communicate with other team
-members can be included here
+			Description, supporting images or anything you wish to communicate with other team members can be included here
 		</div>
 		
 		<div class="col-md-12 vertical-separator20"></div>
@@ -111,75 +40,17 @@ members can be included here
 		<div class="col-md-12 vertical-separator20"></div>
 		
 		<div class="col-md-12" style="border:1px solid #000;height:200px;">
-			<h3>Form</h3>
-			<div class="form-group">
-				<label for="">Form item 1</label>
-				<input type="text" style="width:75%;" />
+			<div class="col-md-12">
+				<h3>Form</h3>
+				<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.form.html'"></div>							
 			</div>
-			
-			<div class="form-group">
-				<label for="">Form item 1</label>
-				<input type="text" style="width:75%;" />
-			</div>
-			
-			<div class="form-group">
-				<label for="">Form item 1</label>
-				<input type="text" style="width:75%;" />
-			</div>			
 		</div>
 		
 		<div class="col-md-12 vertical-separator20"></div>
 		
 		<div class="col-md-12" style="border:1px solid #000;height:400px;">
 			<h3>Media</h3>
-
-			<div class="col-md-12 no-padding">
-				<div class="col-md-12 separator20"></div> 
-		
-				<div class="col-md-12 wf-stage-content-media-upload">
-					<div>
-						Drop files anywhere to upload
-						<br />
-						<button class="btn btn-default">
-							Select files
-						</button>                    
-					</div>
-				</div>
-		
-				<div class="col-md-12 vertical-separator50"></div> 
-		
-				<div class="col-md-6 no-padding">
-					<h4>{{ vm.workflowMedias.length + ' ' }} files in total  </h4>
-				</div>
-		
-				<div class="col-md-6 no-padding wf-stage-content-media-search">
-					<input type="text" placeholder="Search" />
-				</div>
-		
-				<div class="col-md-12 separator10"></div>
-		
-				<div ng-repeat="media in vm.workflowMedias" class="col-md-12 wf-center-element no-padding">
-					<div class="col-md-1 no-padding wf-stage-content-media-list-border">
-						<img id="u19_img" ng-src="{{ media.image }}">
-					</div>
-		
-					<div class="col-md-5 no-padding wf-stage-content-media-list-border">
-						<p>
-							{{ media.name }}
-						</p>
-					</div>
-		
-					<div class="col-md-4 no-padding wf-stage-content-media-list-border">
-						<p>
-							{{ media.date }}
-						</p>
-					</div>
-		
-					<div class="col-md-2 no-padding wf-stage-content-media-list-border-select">
-						
-					</div>
-				</div>	
+			<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.media.html'"></div>
 		</div>
-		
 	</div>
 </div>

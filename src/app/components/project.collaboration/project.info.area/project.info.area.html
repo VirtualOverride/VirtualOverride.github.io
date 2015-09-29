@@ -1,0 +1,31 @@
+<div class="col-mid-12" style="margin-top:35px;margin-left:20px;margin-right:20px;">
+	<p>
+		<h4>Type_ProjectName_Client_Date</h4>
+		<br />
+		Project description area, you can enter a short paragraph here to describe your project in detail. 
+		<br /><br />      
+		<div class="col-mid-12">
+			<select class="form-control" ng-model="vm.selected_client"
+				ng-options="client.name for client in vm.project_clients">
+			</select>					
+		</div>
+	</p>         
+</div>		
+
+<div class="col-md-12 vertical-separator20"></div>
+
+<div class="col-md-12">	
+	<tabset>
+		<tab heading="Dashboard" active="true">				
+			<div ng-include="'app/components/project.collaboration/project.info.area/tabs/dashboard.html'"></div>
+		</tab>
+		<tab heading="Members">
+			<div ng-include="'app/components/project.collaboration/project.info.area/tabs/members.html'"></div>
+		</tab>
+		<tab heading="Setting">
+			<div ng-include="'app/components/project.collaboration/project.info.area/tabs/settings.html'"></div>
+		</tab>
+	</tabset>
+</div>		
+
+

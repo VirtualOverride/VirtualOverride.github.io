@@ -16,3 +16,9 @@
     width: 175px;
     word-wrap: break-word;
 }
+
+.db-project-stage-content-header {
+    background-image: url('../../../assets/images/u90.png');
+    height: 50px;
+    padding: 0px;
+}

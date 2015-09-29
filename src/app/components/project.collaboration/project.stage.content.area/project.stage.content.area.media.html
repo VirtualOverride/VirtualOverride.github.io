@@ -1,0 +1,42 @@
+<div class="col-md-12 no-padding">
+	<div class="col-md-12 separator20"></div> 
+
+	<div class="col-md-12 wf-stage-content-media-upload">
+		<div>
+			Drop files anywhere to upload
+			<br />
+			<button class="btn btn-default">
+				Select files
+			</button>                    
+		</div>
+	</div>
+
+	<div class="col-md-12 vertical-separator50"></div> 
+
+	<div class="col-md-6 no-padding">
+		<h4>{{ vm.workflowMedias.length + ' ' }} files in total  </h4>
+	</div>
+
+	<div class="col-md-6 no-padding wf-stage-content-media-search">
+		<input type="text" placeholder="Search" />
+	</div>
+
+	<div class="col-md-12 separator10"></div>
+
+	<div ng-repeat="media in vm.workflowMedias" class="col-md-12 wf-center-element no-padding">
+		<div class="col-md-1 no-padding wf-stage-content-media-list-border">
+			<img id="u19_img" ng-src="{{ media.image }}">
+		</div>
+	
+		<div class="col-md-5 no-padding wf-stage-content-media-list-border">
+			<p>{{ media.name }}</p>
+		</div>
+	
+		<div class="col-md-4 no-padding wf-stage-content-media-list-border">
+			<p>{{ media.date }}</p>
+		</div>
+	
+		<div class="col-md-2 no-padding wf-stage-content-media-list-border-select">
+		</div>
+	</div>	
+</div>

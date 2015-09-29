@@ -1,0 +1,53 @@
+<div class="col-md-12 no-padding tab-body-margin-top">
+	
+	<div class="col-md-12 no-padding">
+		<h3>8 members</h3>
+	</div>
+	
+	<div class="col-md-12 mb-email">
+		<div class="col-md-6 no-padding">
+			<input type="text" placeholder="Email" />
+		</div>
+		<div class="col-md-4 no-padding">
+			<select class="form-control mb-role-select" id="sel1">
+				<option>Role-1</option>
+				<option>Role-2</option>
+				<option>Role-3</option>
+				<option>Role-4</option>
+			</select>			
+		</div>
+		<div class="col-md-2 no-padding">
+			 <button type="button" class="btn btn-default mb-btn-invite">
+				 Invite
+			 </button>
+		</div>
+	</div>
+	
+	<div class="col-md-12 vertical-separator20"></div>
+	
+	<div class="col-md-12 no-padding">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Role</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="member in vm.members">
+					<td>{{ member.name }}</td>
+					<td>{{ member.email }}</td>
+					<td>{{ member.role }}</td>
+					<td>
+						<button type="button" class="btn btn-danger btn-xs">
+							<span class="glyphicon glyphicon-trash"></span>
+						</button>
+					</td>
+				</tr>				
+			</tbody>
+		</table>
+	</div>
+	
+</div>
