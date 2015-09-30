@@ -9,7 +9,7 @@
                 templateUrl: 'app/main/main.html',
                 controllerAs: 'vm'
             })
-                .when('/project', {
+                .when('/project-dashboard', {
                 controller: 'demoApp.ProjectCollaborationController',
                 templateUrl: 'app/components/project.collaboration/project.collaboration.html',
                 controllerAs: 'vm'
