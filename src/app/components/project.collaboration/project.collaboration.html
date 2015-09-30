@@ -3,22 +3,9 @@
 		<div ng-include="'app/components/project.collaboration/project.info.area/project.info.area.html'"></div>		
 	</div>
 	
-	<div class="col-md-6 no-padding"  style="border-left:1px solid #000;height:1000px;">
+	<div class="col-md-6 db-project-stage-content no-padding">
 		<div class="col-md-12 no-padding">
-			<div class="col-md-12 db-project-stage-content-header">			
-			</div>
-			
-			
-			<!--<div class="col-md-6">
-				<p class="p-center">
-					No.# 
-					<input type="checkbox" />
-					Pre-defined stage name
-				</p>
-			</div>
-			<div class="col-md-6">
-				<button type="button" class="btn btn-default">Submit</button>
-			</div>-->
+			<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.header.html'"></div>
 		</div>
 		
 		<div class="col-md-12 vertical-separator20"></div>
@@ -39,18 +26,27 @@
 		
 		<div class="col-md-12 vertical-separator20"></div>
 		
-		<div class="col-md-12" style="border:1px solid #000;height:200px;">
+		<div class="col-md-12 db-project-stage-content-form">
 			<div class="col-md-12">
 				<h3>Form</h3>
 				<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.form.html'"></div>							
-			</div>
+			</div>				
 		</div>
 		
 		<div class="col-md-12 vertical-separator20"></div>
 		
-		<div class="col-md-12" style="border:1px solid #000;height:400px;">
-			<h3>Media</h3>
-			<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.media.html'"></div>
+		<div class="col-md-12 db-project-stage-content-media">
+			<div class="col-md-12">
+				<h3>Media</h3>
+				<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.media.html'"></div>				
+			</div>
 		</div>
+		
+		<div class="col-md-12 vertical-separator30"></div>
+		
+		<div class="col-md-12 no-padding">
+			<div ng-include="'app/components/project.collaboration/project.stage.content.area/project.stage.content.area.comments.html'"></div>							
+		</div>
+		
 	</div>
 </div>

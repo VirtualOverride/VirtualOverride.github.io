@@ -22,3 +22,57 @@
     height: 50px;
     padding: 0px;
 }
+
+.db-project-stage-content-header-content {
+    position: absolute;
+    top: 17px;
+    font-weight: bolder;
+    left: 5%;
+}
+
+.db-project-stage-content-header-content p {
+    font-weight: bolder;
+}
+
+.db-project-stage-content-header-input {
+    position: absolute;
+    left: 23%;
+    top: 0;
+}
+
+.db-project-stage-content-header-text-1 {
+    margin-left: 37px
+}
+
+.db-project-stage-content-header-btn {
+    position: absolute;
+    top: 8px;
+    font-weight: bolder;
+    left: 78%;
+}
+
+.db-project-stage-content-header-btn button {
+    width: 112px;
+}
+
+.db-project-stage-content {
+    border-left:1px solid #000;
+    height:1000px;
+}
+
+.db-project-stage-content-form {
+    height: 200px;
+}
+
+.db-project-stage-content-form > div {
+    border: 1px  solid #000;
+}
+
+.db-project-stage-content-media {
+    height: 400px;
+}
+
+.db-project-stage-content-media > div {
+    border: 1px  solid #000;
+    height: 370px;
+}
