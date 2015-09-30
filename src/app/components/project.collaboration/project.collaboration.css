@@ -1,3 +1,7 @@
+.db-project-h {
+    height: 1203px;
+}
+
 #u16 {
     width: 189px;
     height: 71px;
@@ -57,7 +61,6 @@
 
 .db-project-stage-content {
     border-left:1px solid #000;
-    height:1000px;
 }
 
 .db-project-stage-content-form {
@@ -75,4 +78,38 @@
 .db-project-stage-content-media > div {
     border: 1px  solid #000;
     height: 370px;
+}
+
+.db-project-stage-content-comments {
+    background-image: url('../../../assets/images/u150.png');
+    height: 196px;
+    padding: 0px;
+}
+
+.db-project-stage-content-comments-image-user {
+    width: 35px;
+    height: 35px;
+}
+
+.db-project-stage-content-comments-input {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+
+.db-project-stage-content-comments-message {
+    position: absolute;
+    left: 10%;  
+    top: 3px;
+}
+
+.db-project-stage-content-comments-message p {
+    font-size: 12px;
+}
+
+.db-project-stage-content-comments-reply {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 44px;
 }
