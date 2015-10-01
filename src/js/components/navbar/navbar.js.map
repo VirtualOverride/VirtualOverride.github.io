@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"components/navbar/navbar.js","sourcesContent":[],"sourceRoot":"/source/"}
+{"version":3,"sources":["components/navbar/navbar.ts"],"names":[],"mappings":"AAGC","file":"components/navbar/navbar.js","sourcesContent":["module demoApp {\n\t\n\t\n}"],"sourceRoot":"/source/"}
