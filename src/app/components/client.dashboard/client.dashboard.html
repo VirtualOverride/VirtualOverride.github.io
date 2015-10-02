@@ -1,6 +1,11 @@
 <div ng-include="'app/components/navbar/navbar.html'"></div>
 <div class="wf-container">
-	<div class="cd-container-body">
-		
+	<div class="cd-container-body cd-h">
+		<div class="col-md-3 no-padding cd-h cd-left-pane">
+			<div ng-include="'app/components/client.dashboard/client.dashboard.left-pane.html'"></div>
+		</div>	
+		<div class="col-md-9 cd-h cd-right-pane">
+			<div ng-include="'app/components/client.dashboard/client.dashboard.right-pane.html'"></div>
+		</div>
 	</div>
 </div>

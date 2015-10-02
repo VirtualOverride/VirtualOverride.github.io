@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "start": "gulp serve",
-    "prestart": "npm install"
+    "prestart": " bower install && npm install"
   },
   "keywords": [
     "angularjs",
