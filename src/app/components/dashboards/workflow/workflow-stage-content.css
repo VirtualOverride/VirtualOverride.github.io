@@ -1,0 +1,94 @@
+.workflow-state-content {
+	height:1200px;
+	padding:0px;
+	margin-top: 20px;
+}
+
+.wf-state-content-form.nav-tabs > li {
+    float: right;
+}
+
+.wf-state-content-form {
+	padding: 0px;
+	height: 430px;
+}
+
+.wf-state-content-form-left-container {
+	height:320px;
+	padding: 10px;
+}
+
+.wf-state-content-form-left {
+	background-color:#F0F4F5;
+	height:365px;
+}
+
+.wf-state-content-form-right-container {
+	padding-right: 0px;
+}
+ 
+.wf-state-content-header {
+	background-color:#C9CFD1;
+}
+
+.wf-state-content-header p {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px
+}
+
+.wf-stage-content-media-upload {
+	border: 2px dashed lavender;
+	height: 80px;
+}
+
+.wf-stage-content-media-upload div {
+	padding: 10px;
+	padding-left: 130px;
+}
+
+.wf-stage-content-media-upload div > button {
+	margin-left: 39px;
+}
+
+.wf-stage-content-media-list-border {
+	border: 1px solid #000;
+	height: 35px;
+	border-right: 0px;
+}
+
+.wf-stage-content-media-list-icon {
+	border: 1px solid #000;
+	height: 35px;
+	border-right: 0px;	
+}
+
+.wf-stage-content-media-search {
+	top: 5px;
+}
+
+.wf-stage-content-media-search input {
+	width: 100%;
+	height: 30px;
+}
+
+.wf-stage-content-media-list-border-select {
+	height: 35px;
+	border: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.wf-state-content-form-left button {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 2px;
+}
+
+#u19_img {
+	position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 35px;
+    height: 25px;
+}

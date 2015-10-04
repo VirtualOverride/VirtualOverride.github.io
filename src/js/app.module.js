@@ -4,7 +4,8 @@
         'ui.tree',
         'ui.bootstrap']);
     app.config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/', {
+            $routeProvider
+                .when('/', {
                 controller: 'demoApp.CustomersController',
                 templateUrl: 'app/main/main.html',
                 controllerAs: 'vm'
@@ -17,7 +18,12 @@
                 .when('/client-dashboard', {
                 controller: 'demoApp.ClientDashboardController',
                 templateUrl: 'app/components/client.dashboard/client.dashboard.html',
-                controllerAS: 'vm'
+                controllerAs: 'vm'
+            })
+                .when('/workflow-dashboard', {
+                templateUrl: 'app/components/dashboards/workflow/workflow.html',
+                controller: 'demoApp.WorkflowDashboardController',
+                controllerAs: 'vm'
             });
         }]);
 })();

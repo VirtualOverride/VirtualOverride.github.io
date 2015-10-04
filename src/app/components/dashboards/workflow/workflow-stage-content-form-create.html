@@ -1,0 +1,51 @@
+<div class="col-md-12 wf-state-content-form-left-container">
+    <div class="col-md-4 wf-state-content-form-left no-padding">
+        <br />
+
+        <div class="col-md-12 no-padding">
+            <div class="col-md-12">
+                Standard
+            </div>
+            
+            <div class="vertical-separator20"></div>      
+
+            <div ng-repeat="standard in vm.workflowFormStandards" class="col-md-12">
+                <button class="btn btn-default">
+                    {{ standard.text }}
+                </button> 
+            </div>  
+        </div>
+
+        <div class="col-md-12 no-padding">
+            <div class="vertical-separator20"></div>
+
+            <div class="col-md-12">
+                Advance
+            </div>
+
+            <div ng-repeat="advance in vm.workflowFormAdvances" class="col-md-12">
+                <button class="btn btn-default">
+                    {{ advance.text }}
+                </button> 
+            </div> 
+
+        </div>
+
+    </div>
+    <div class="col-md-8 wf-state-content-form-right-container">
+        <div class="form-group">
+            <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="12" id="comment"></textarea>
+        </div>
+        <div class="btn-group pull-right" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">
+                Clear All
+            </button>
+            <button type="button" class="btn btn-default">
+                Create All
+            </button>
+        </div>                            
+    </div>
+</div> 

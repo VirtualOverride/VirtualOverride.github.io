@@ -1,0 +1,76 @@
+.wf-h {
+	height: 1350px;
+}
+
+.wf-folder-pane {
+	border-right: 1px solid #C8C8C8;
+}
+
+.wf-folder-pane-add-new button {
+	width: 100%;
+}
+
+.wf-info-stage-page {
+	border-right: 1px solid #C8C8C8;
+}
+
+.wf-info-stage-item div {
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 1px solid #C8C8C8;
+	border-bottom: 1px solid #C8C8C8;
+	height: 42px;
+}
+
+.wf-info-stage-item-active img {
+	position: absolute;
+    right: -2px;
+    height: 43px;
+    width: 2px;
+    top: -1px;
+}
+
+.wf-info-stage-item-visible img {
+	visibility: hidden;
+} 
+
+.wf-info-stage-item-check input {
+	position: absolute;
+    top: 10px;
+    left: 16%;
+}
+
+.wf-info-stage-item-label {
+    position: absolute;
+    top: 10px;
+    left: 20%;	
+}
+
+.wf-info-stage-item-icon-1 img {
+	width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 15%;
+    top: 7px;
+    visibility: hidden;
+}
+
+.wf-info-stage-item-icon-2 img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 13px;
+    right: 9%;
+    visibility: hidden;
+}
+
+.wf-info-stage-item-icon img {
+    visibility: visible;
+}
+
+.wf-info-stage-item-new img {
+    height: 43px;
+    position: absolute;
+    left: -2px;
+    top: -1px;  
+}
