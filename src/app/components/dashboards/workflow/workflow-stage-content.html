@@ -14,43 +14,15 @@
 <div class="col-md-12 vertical-separator20"></div>
 
 <div class="col-md-12">
-	<accordion close-others="true">
-		<accordion-group is-open="true">
+	<accordion ng-repeat="content in vm.accordion_contents" class="wf-stage-content-panel-group" close-others="false">
+		<accordion-group is-open="content.is_open">
 			<accordion-heading>
-				Description
+				{{ content.header  }}
 				<i class="pull-right glyphicon"
-					ng-class="{'glyphicon-chevron-down': true, 'glyphicon-chevron-right': !true }">
+					ng-class="{'glyphicon-chevron-down': content.is_open, 'glyphicon-chevron-right': !content.is_open }">
 				</i>
 			</accordion-heading>
-			<div class="col-md-12 no-padding">
-				<div text-angular="text-angular" style="padding:2px;" 
-					name="htmlcontent" 
-					ng-model="htmlcontent" 
-					ta-disabled='disabled'>
-				</div>                 
-			</div>
+			<div ng-include="content.template"></div>
 		</accordion-group>		
-		<accordion-group is-open="true">
-			<accordion-heading>
-				Form
-				<i class="pull-right glyphicon"
-					ng-class="{'glyphicon-chevron-down': true, 'glyphicon-chevron-right': !true }">
-				</i>
-			</accordion-heading>
-			<div class="col-md-12 wf-state-content-header no-padding">
-				<p>Form</p>                    
-			</div>
-			<div class="col-md-12 wf-state-content-form">
-				<div class="separator20"></div>
-				<tabset>
-					<tab heading="Form Library">
-						Form Library
-					</tab>
-					<tab heading="Create form" active="true">
-						<div ng-include="'app/views/workflow-stage-content-form-create.html'"></div>   
-					</tab>
-				</tabset>
-			</div>
-		</accordion-group>
 	</accordion>
 </div>

@@ -19,6 +19,7 @@
     "angular-ui-tree": "~2.9.0",
     "bootstrap": "~3.3.5",
     "textAngular": "~1.4.6",
-    "ui-bootstrap": "~0.13.4"
+    "ui-bootstrap": "~0.13.4",
+    "font-awesome": "~4.4.0"
   }
 }

@@ -134,3 +134,7 @@
     height: 39px;
     padding: 10px;
 }
+
+.wf-stage-content-panel-group > div {
+    margin-bottom: 5px;
+}
